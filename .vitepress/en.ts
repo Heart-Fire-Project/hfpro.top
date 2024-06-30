@@ -25,7 +25,7 @@ export const en = defineConfig({
 
     nav: [
       {
-        text: "博客",
+        text: "Blog",
         link: "https://blog.hfpro.top",
       },
     ],
