@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A project about Minecraft.",
   "type": "module",
+  "packageManager": "pnpm@9.15.3",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
