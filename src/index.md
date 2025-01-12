@@ -46,7 +46,7 @@ const members = [
       { icon: 'x', link: 'https://twitter.com/littlechestw' },
       { icon: mail, link: 'mailto:little@littlew.top', ariaLabel: '电子邮件' }
     ],
-    sponsor: "https://afdian.net/a/LittleChest",
+    sponsor: "https://afdian.com/a/LittleChest",
     actionText: '赞助'
   },
   {
@@ -149,7 +149,7 @@ var giscus_theme
 
 # 赞助列表
 
-[![赞助列表](https://afdian.hfpro.top/sponsor.svg)](https://afdian.net/a/HfPro)
+[![赞助列表](https://afdian.hfpro.top/sponsor.svg)](https://afdian.com/a/HfPro)
 
 # 讨论板
 
