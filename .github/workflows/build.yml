@@ -2,7 +2,7 @@ name: Build
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -25,6 +25,12 @@ jobs:
         run: pnpm install
       - name: Build
         run: pnpm build
+      - name: Purge remote
+        uses: wei/rclone@v1
+        env:
+          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+        with:
+          args: purge FTP:hfpro --contimeout 10s --progress
       - name: Upload
         uses: wei/rclone@v1
         env:
