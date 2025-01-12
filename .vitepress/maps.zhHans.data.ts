@@ -1,2 +1,2 @@
 import { createContentLoader } from "vitepress";
-export default createContentLoader("src/zh-hans/maps/*.md");
+export default createContentLoader("src/maps/*.md");

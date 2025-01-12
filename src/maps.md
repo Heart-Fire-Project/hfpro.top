@@ -4,7 +4,7 @@ title: 浏览作品
 ---
 
 <script setup>
-import { data } from "../../.vitepress/maps.zhHans.data.ts";
+import { data } from "../.vitepress/maps.zhHans.data.ts";
 const maps = [...data].reverse();
 
 import { computed } from 'vue'

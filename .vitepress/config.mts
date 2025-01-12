@@ -16,7 +16,7 @@ export default defineConfig({
   },
   locales: {
     en: { label: "English", ...en },
-    "zh-hans": { label: "简体中文", ...zhHans },
+    root: { label: "简体中文", ...zhHans },
   },
   themeConfig: {
     logo: "/logo.png",
