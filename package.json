@@ -29,8 +29,6 @@
     "vue": "^3.4.20"
   },
   "dependencies": {
-    "@giscus/vue": "^3.0.0",
-    "@vercel/analytics": "^1.2.2",
-    "@vercel/speed-insights": "^1.0.10"
+    "@giscus/vue": "^3.0.0"
   }
 }
