@@ -99,14 +99,14 @@ const members = [
     ]
   },
   {
-    avatar: 'https://littleskin.cn/avatar/player/Rsrsr',
+    avatar: 'https://littleskin.cn/avatar/537190',
     name: 'Roser / Rsrsr',
     title: 'Art/Translator/Datapack/Architecture/Designer',
     desc: "Doubled Labor(er)",
     links: [
-      { icon: 'github', link: 'https://github.com/Roser7419' },
+      { icon: 'github', link: 'https://github.com/R7sr' },
       { icon: qq, link: 'https://wpa.qq.com/wpa_jump_page?uin=3374287798', ariaLabel: 'Tencent QQ' },
-      { icon: mail, link: 'mailto:Roser@7419.studio', ariaLabel: 'Email' }
+      { icon: mail, link: 'mailto:Roser7419@outlook.com', ariaLabel: 'Email' }
     ]
   },
   {
