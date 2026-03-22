@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { en, search as enSearch } from "./en";
+// import { en, search as enSearch } from "./en";
 import { zhHans, search as zhHansSearch } from "./zh-Hans";
 
 export default defineConfig({
@@ -15,8 +15,8 @@ export default defineConfig({
     hostname: "https://hfpro.top",
   },
   locales: {
-    en: { label: "English", ...en },
     root: { label: "简体中文", ...zhHans },
+    // en: { label: "English", ...en },
   },
   themeConfig: {
     logo: "/logo.png",
@@ -30,7 +30,7 @@ export default defineConfig({
     search: {
       provider: "local",
       options: {
-        locales: { ...zhHansSearch, ...enSearch },
+        locales: { ...zhHansSearch, /* , ...enSearch */ },
       },
     },
   },
