@@ -1,34 +1,25 @@
 {
   "name": "heart-fire-project",
   "version": "1.0.0",
-  "description": "A project about Minecraft.",
   "type": "module",
-  "packageManager": "pnpm@9.15.3",
+  "packageManager": "pnpm@10.32.1",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Heart-Fire-Project/hfpro.git"
   },
   "author": {
     "name": "LittleChest",
     "email": "little@littlew.top",
     "url": "https://littlew.top"
   },
-  "bugs": {
-    "url": "https://github.com/Heart-Fire-Project/hfpro/issues"
-  },
-  "homepage": "https://hfpro.top",
   "devDependencies": {
-    "prettier": "^3.2.5",
-    "vitepress": "1.0.0-rc.44",
-    "vitepress-plugin-nprogress": "^0.0.4",
-    "vue": "^3.4.20"
+    "prettier": "^3.8.1",
+    "vitepress": "^2.0.0-alpha.17",
+    "vitepress-plugin-nprogress": "^0.1.1",
+    "vue": "^3.5.30"
   },
   "dependencies": {
-    "@giscus/vue": "^3.0.0"
+    "@giscus/vue": "^3.1.1"
   }
 }
