@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 浏览作品
-      link: "./maps"
+      link: './maps'
 
 features:
   - icon: 🤔
@@ -28,6 +28,18 @@ features:
 
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD033 -->
+
+<style scoped>
+  .vp-doc a {
+    text-decoration: unset;
+  }
+  .hfpro.fill {
+    height: 10vw;
+  }
+  .vp-doc h1 {
+    margin-top: 1em;
+  }
+</style>
 
 <script setup>
 import Giscus from '@giscus/vue'
@@ -162,18 +174,3 @@ var giscus_theme
   :theme=giscus_theme
   lang="zh-CN"
 />
-
-<style>
-  .vp-doc a {
-    text-decoration: unset;
-  }
-</style>
-
-<style scoped>
-  .hfpro.fill {
-    height: 10vw;
-  }
-  .vp-doc h1 {
-    margin-top: 1em;
-  }
-</style>

@@ -52,6 +52,11 @@ import VPBadge from 'vitepress/dist/client/theme-default/components/VPBadge.vue'
 </div>
 
 <style scoped>
+.VPBadge {
+  margin-right: 4px;
+  transform: translateY(2px);
+}
+
 @media (min-width: 375px) {
   .maps .container {
     grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
