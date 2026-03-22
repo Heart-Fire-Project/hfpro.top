@@ -5,14 +5,9 @@ import { zhHans, search as zhHansSearch } from "./zh-Hans";
 export default defineConfig({
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   cleanUrls: true,
-  rewrites: {
-    "index.md": "index.md",
-    ":file(.*)/index.md": ":file/index.md",
-    ":file(.*).md": ":file/index.md",
-  },
   srcDir: "./src",
   sitemap: {
-    hostname: "https://hfpro.top",
+    hostname: "https://hfpro.dev",
   },
   locales: {
     root: { label: "简体中文", ...zhHans },

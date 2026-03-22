@@ -26,29 +26,19 @@ features:
     details: 在心火计划中，我们深信创新和创造力是推动我们前进的动力。我们鼓励每一位成员将他们的想象力注入到 Minecraft 的世界中，创造出独一无二的地图，让每个玩家都能体验到不一样的冒险。
 ---
 
+<!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD033 -->
+
 <script setup>
 import Giscus from '@giscus/vue'
 import { useData } from 'vitepress'
 
 import { VPTeamMembers } from 'vitepress/theme'
-const mail = {svg:'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 900 900"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>'}
-const qq = {svg:'<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512"><path d="M454.943 278.922a67.951 67.951 0 0 0-28.276-17.002v-91.254C426.667 76.409 350.258 0 256 0S85.333 76.409 85.333 170.667v91.254a67.929 67.929 0 0 0-28.276 17.002c-26.66 26.662-26.66 69.883 0 96.544l28.276-28.276V358.4c0 47.502 19.418 90.453 50.736 121.392C130.925 489.387 128 500.35 128 512h256c0-11.65-2.925-22.613-8.071-32.208 31.319-30.937 50.737-73.89 50.737-121.392v-11.209l28.276 28.276c26.661-26.662 26.661-69.883.001-96.545M375.467 358.4c0 34.256-14.345 66.045-39.18 88.489a68.22 68.22 0 0 0-20.553-3.156c-25.709 0-48.09 14.218-59.733 35.215-11.643-20.997-34.024-35.215-59.733-35.215a68.153 68.153 0 0 0-20.553 3.156c-24.835-22.444-39.18-54.231-39.18-88.489V145.067c0-42.347 34.453-76.8 76.8-76.8 15.439 0 30.15 4.512 42.667 12.919 12.517-8.407 27.226-12.919 42.667-12.919 42.349 0 76.8 34.453 76.8 76.8V358.4z"/><path d="m256 187.733-51.2 34.134 51.2 51.2 51.2-51.2z"/></svg>'}
+
+import mail from '../.vitepress/icon/mail.svg?raw'
+import qq from '../.vitepress/icon/qq.svg?raw'
+
 const members = [
-  {
-    avatar: 'https://littleskin.cn/avatar/138166',
-    name: 'LittleChest',
-    title: '卖萌',
-    desc: "饿饿，饭饭~",
-    links: [
-      { icon: 'github', link: 'https://github.com/LittleChest' },
-      { icon: 'discord', link: 'https://discord.com/users/894903639808831488' },
-      { icon: qq, link: 'https://wpa.qq.com/wpa_jump_page?uin=2191038130', ariaLabel: '腾讯 QQ' },
-      { icon: 'x', link: 'https://twitter.com/littlechestw' },
-      { icon: mail, link: 'mailto:little@littlew.top', ariaLabel: '电子邮件' }
-    ],
-    sponsor: "https://afdian.com/a/LittleChest",
-    actionText: '赞助'
-  },
   {
     avatar: 'https://littleskin.cn/avatar/414892',
     name: 'Beiyao',
@@ -57,9 +47,9 @@ const members = [
     links: [
       { icon: 'github', link: 'https://github.com/beiyaohhhc' },
       { icon: 'discord', link: 'https://discord.com/users/844536118895706152' },
-      { icon: qq, link: 'https://wpa.qq.com/wpa_jump_page?uin=2383615282', ariaLabel: '腾讯 QQ' },
-      { icon: 'x', link: 'https://twitter.com/beiyao5200' },
-      { icon: mail, link: 'mailto:beiyao.chen@qq.com', ariaLabel: '电子邮件' }
+      { icon: {svg: qq}, link: 'https://wpa.qq.com/wpa_jump_page?uin=2383615282', ariaLabel: '腾讯 QQ' },
+      { icon: 'x', link: 'https://x.com/beiyao5200' },
+      { icon: {svg: mail}, link: 'mailto:beiyao.chen@qq.com', ariaLabel: '电子邮件' }
     ]
   },
   {
@@ -68,7 +58,18 @@ const members = [
     title: '翻译',
     links: [
       { icon: 'github', link: 'https://github.com/Seayay' },
-      { icon: mail, link: 'mailto:1kyr@hfpro.top', ariaLabel: '电子邮件' }
+      { icon: {svg: mail}, link: 'mailto:1kyr@hfpro.top', ariaLabel: '电子邮件' }
+    ]
+  },
+  {
+    avatar: 'https://littleskin.cn/avatar/537190',
+    name: 'Roser / Rsrsr',
+    title: '美工/翻译/数据包/建筑/策划',
+    desc: "彼岸双生 = 顶级劳工",
+    links: [
+      { icon: 'github', link: 'https://github.com/R7sr' },
+      { icon: {svg: qq}, link: 'https://wpa.qq.com/wpa_jump_page?uin=3374287798', ariaLabel: '腾讯 QQ' },
+      { icon: {svg: mail}, link: 'mailto:Roser7419@outlook.com', ariaLabel: '电子邮件' }
     ]
   },
   {
@@ -78,8 +79,8 @@ const members = [
     desc: "心火计划最大闲人",
     links: [
       { icon: 'github', link: 'https://github.com/HeimNad' },
-      { icon: qq, link: 'https://wpa.qq.com/wpa_jump_page?uin=5278626', ariaLabel: '腾讯 QQ' },
-      { icon: mail, link: 'mailto:5278626@qq.com', ariaLabel: '电子邮件' }
+      { icon: {svg: qq}, link: 'https://wpa.qq.com/wpa_jump_page?uin=5278626', ariaLabel: '腾讯 QQ' },
+      { icon: {svg: mail}, link: 'mailto:5278626@qq.com', ariaLabel: '电子邮件' }
     ],
     sponsor: "https://payme.heimnad.top",
     actionText: '赞助'
@@ -92,21 +93,10 @@ const members = [
     links: [
       { icon: 'github', link: 'https://github.com/GGHePinGG' },
       { icon: 'discord', link: 'https://discord.com/users/843090662350127114' },
-      { icon: qq, link: 'https://wpa.qq.com/wpa_jump_page?uin=1434230923', ariaLabel: '腾讯 QQ' },
-      { icon: 'x', link: 'https://twitter.com/IamHePingGe' },
+      { icon: {svg: qq}, link: 'https://wpa.qq.com/wpa_jump_page?uin=1434230923', ariaLabel: '腾讯 QQ' },
+      { icon: 'x', link: 'https://x.com/IamHePingGe' },
       { icon: 'youtube', link: 'https://www.youtube.com/@P1ge0nLee0' },
-      { icon: mail, link: 'mailto:me@lee0p1ge0n.top', ariaLabel: '电子邮件' }
-    ]
-  },
-  {
-    avatar: 'https://littleskin.cn/avatar/537190',
-    name: 'Roser / Rsrsr',
-    title: '美工/翻译/数据包/建筑/策划',
-    desc: "彼岸双生 = 顶级劳工",
-    links: [
-      { icon: 'github', link: 'https://github.com/R7sr' },
-      { icon: qq, link: 'https://wpa.qq.com/wpa_jump_page?uin=3374287798', ariaLabel: '腾讯 QQ' },
-      { icon: mail, link: 'mailto:Roser7419@outlook.com', ariaLabel: '电子邮件' }
+      { icon: {svg: mail}, link: 'mailto:me@lee0p1ge0n.top', ariaLabel: '电子邮件' }
     ]
   },
   {
@@ -115,7 +105,7 @@ const members = [
     title: '打杂/翻译',
     links: [
       { icon: 'github', link: 'https://github.com/XieXiLin2' },
-      { icon: mail, link: 'mailto:support@xiexilin.com', ariaLabel: '电子邮件' }
+      { icon: {svg: mail}, link: 'mailto:support@xiexilin.com', ariaLabel: '电子邮件' }
     ]
   },
   {
@@ -124,8 +114,23 @@ const members = [
     title: '策划',
     links: [
       { icon: 'github', link: 'https://github.com/SmallSkrua' },
-      { icon: mail, link: 'mailto:1436924406@qq.com', ariaLabel: '电子邮件' }
+      { icon: {svg: mail}, link: 'mailto:1436924406@qq.com', ariaLabel: '电子邮件' }
     ]
+  },
+  {
+    avatar: 'https://littleskin.cn/avatar/138166',
+    name: 'LittleChest',
+    title: '卖萌',
+    desc: "饿饿，饭饭~",
+    links: [
+      { icon: 'github', link: 'https://github.com/LittleChest' },
+      { icon: 'discord', link: 'https://discord.com/users/894903639808831488' },
+      { icon: {svg: qq}, link: 'https://wpa.qq.com/wpa_jump_page?uin=2191038130', ariaLabel: '腾讯 QQ' },
+      { icon: 'x', link: 'https://x.com/littlechestw' },
+      { icon: {svg: mail}, link: 'mailto:little@littlew.top', ariaLabel: '电子邮件' }
+    ],
+    sponsor: "https://afdian.com/a/LittleChest",
+    actionText: '赞助'
   }
 ]
 
@@ -136,20 +141,14 @@ if (useData().isDark.value === true) {
 }
 var giscus_theme
 </script>
-<br />
-<br />
-<br />
-<br />
+
+<div class="hfpro fill" />
 
 # 成员列表
 
 <VPTeamMembers size="small" :members="members" />
 
 <br />
-
-# 赞助列表
-
-[![赞助列表](https://afdian.hfpro.top/sponsor.svg)](https://afdian.com/a/HfPro)
 
 # 讨论板
 
@@ -164,4 +163,17 @@ var giscus_theme
   lang="zh-CN"
 />
 
-或者，请向 [admin@hfpro.top](mailto:admin@hfpro.top) 发送邮件。
+<style>
+  .vp-doc a {
+    text-decoration: unset;
+  }
+</style>
+
+<style scoped>
+  .hfpro.fill {
+    height: 10vw;
+  }
+  .vp-doc h1 {
+    margin-top: 1em;
+  }
+</style>

@@ -3,6 +3,9 @@ layout: page
 title: 浏览作品
 ---
 
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD045 -->
+
 <script setup>
 import { data } from "../.vitepress/maps.zhHans.data.ts";
 const maps = [...data].reverse();
@@ -21,7 +24,7 @@ import VPBadge from 'vitepress/dist/client/theme-default/components/VPBadge.vue'
         <VPLink :href="map.url">
           <img class="image" :src="map.frontmatter.img" :alt="map.frontmatter.title" />
           <div class="data">
-            <h1 v-if="map.frontmatter.title" class="name"> 
+            <h1 v-if="map.frontmatter.title" class="name">
               {{ map.frontmatter.title }}
             </h1>
             <VPLink :href="map.frontmatter.profile" no-icon>
